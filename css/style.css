@@ -38,6 +38,11 @@ html, body{
   /* letter-spacing: -10px; */
   /* animation: text-pulse ease-in-out 1s; */
 }
+@media only screen and (max-width: 600px) {
+    .matrixString {
+        display: none;
+    }
+}
 
 /* ----- Controls Menu ----- */
 #controls{
@@ -114,4 +119,51 @@ html, body{
 
 h2 {
   color: #fff !important;
+}
+
+.contact-button {
+  border: none;
+  z-index: 10000
+  margin-top: 24px !important;
+background: none;
+text-decoration: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+border-radius: 4px;
+font-weight: 600;
+font-family: Roboto Slab ,sans-serif;
+font-size: 16px;
+line-height: 24px;
+margin: 0;
+display: inline-block;
+cursor: pointer;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+position: relative;
+color: #131313;
+    background: #fff;
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow,-webkit-box-shadow;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    padding: 12px 24px;
+}
+
+.contact-button:focus {
+outline: none;
+    -webkit-box-shadow: 0 0 0 3px rgba(0,204,188,.3);
+    box-shadow: 0 0 0 3px rgba(0,204,188,.3);
+}
+
+.contact-button:hover {
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.16);
+}
+
+a:hover {
+  text-decoration: none;
 }
